@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Magnum Courses</title>
-  <style>
+<title>Magnum Egypt Courses</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg'><rect width='64' height='64' rx='12' fill='%231a1a2e'/><rect x='14' y='16' width='10' height='32' rx='5' fill='%23e91e8c'/><rect x='27' y='16' width='10' height='32' rx='5' fill='%23ff9800'/><rect x='40' y='16' width='10' height='32' rx='5' fill='%234fc3f7'/></svg>">  <style>
     /* Premium Brand Palette Configuration */
     :root {
       --blue: #4fc3f7;
@@ -65,7 +65,7 @@
       padding: 0 max(2rem, calc((100% - 1200px) / 2));
     }
 
-    /* CSS CSS-Only Brand Logo Vectors */
+    /* Pure HTML/CSS Accurate Brand Mark Elements */
     .logo-container {
       display: flex;
       align-items: center;
@@ -74,25 +74,25 @@
       user-select: none;
     }
 
-    .logo-waves {
+    .logo-stripes {
       display: flex;
-      gap: 5px;
       align-items: center;
+      gap: 6px;
       height: 32px;
     }
 
-    .logo-wave-item {
-      width: 6px;
-      height: 28px;
-      border-radius: 4px;
-      transform: skewY(-20deg); /* Mimics the distinctive s-wave curve of your brand logo */
+    .logo-stripe-item {
+      width: 8px;
+      height: 30px;
+      border-radius: 20px;
+      display: inline-block; /* Essential for exact rendering */
     }
 
     .logo-text {
       font-size: 1.5rem;
       font-weight: 800;
-      color: var(--dark);
-      letter-spacing: -1px;
+      color: #1a1a2e;
+      letter-spacing: -0.5px;
     }
 
     /* Navigation Tabs Driven to the Far Right */
@@ -128,7 +128,7 @@
       background: rgba(26, 26, 46, 0.04);
     }
 
-    /* Active State Enforcements */
+    /* Active Track States */
     .nav-tab-pill.active[data-color="dark"] { background: var(--dark); color: var(--white); }
     .nav-tab-pill.active[data-color="blue"] { background: var(--blue); color: var(--dark); }
     .nav-tab-pill.active[data-color="orange"] { background: var(--orange); color: var(--dark); }
@@ -155,7 +155,7 @@
       border-color: var(--dark);
     }
 
-    /* Structural Grid Boundaries */
+    /* Structural Grid Layouts */
     .container {
       width: 100%;
       max-width: 1200px;
@@ -172,7 +172,7 @@
       display: block;
     }
 
-    /* Professional Center-Aligned Hero Layout */
+    /* Center-Aligned Hero Layout */
     .hero {
       padding: 5rem 0;
       text-align: center;
@@ -218,7 +218,7 @@
       height: 100%;
     }
 
-    /* Academic Course Grid System */
+    /* Course Playlist Grid Cards */
     .grid-layout {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -311,7 +311,7 @@
       transform: translateX(4px);
     }
 
-    /* Playlist Metrics Panels */
+    /* Course Display Profile Elements */
     .playlist-hero {
       display: flex;
       gap: 2.5rem;
@@ -372,7 +372,7 @@
       letter-spacing: 0.5px;
     }
 
-    /* Syllabus Flow Segments */
+    /* Curricular Content Layout Flow */
     .curriculum-flow {
       display: flex;
       flex-direction: column;
@@ -416,7 +416,7 @@
       display: flex;
       flex-direction: column;
       gap: 10px;
-      margin-bottom: 2.5rem;
+      margin-bottom: 2rem;
     }
 
     .video-node {
@@ -468,71 +468,68 @@
       gap: 8px;
     }
 
-    /* Formative Diagnostic Components */
+    /* Template Link Assessment Blocks (External Links) */
     .assessment-block {
       background: var(--bg);
       border: 1px solid var(--border);
       border-radius: 14px;
-      padding: 2rem;
+      padding: 1.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .assessment-meta {
+      flex: 1;
     }
 
     .assessment-title {
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: var(--dim);
-      margin-bottom: 1.5rem;
-      font-weight: 700;
-    }
-
-    .quiz-item {
-      margin-bottom: 2rem;
-    }
-
-    .quiz-item:last-child {
-      margin-bottom: 0;
-    }
-
-    .quiz-prompt {
-      font-weight: 600;
       font-size: 1.05rem;
-      margin-bottom: 1.25rem;
       color: var(--dark);
+      font-weight: 700;
+      margin-bottom: 0.25rem;
     }
 
-    .quiz-options-matrix {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 10px;
+    .assessment-desc {
+      font-size: 0.9rem;
+      color: var(--dim);
     }
 
-    .opt-btn {
+    .btn-form-link {
       background: var(--white);
       border: 1px solid var(--border);
-      padding: 14px 20px;
+      padding: 12px 24px;
       border-radius: 10px;
-      text-align: left;
-      font-size: 0.95rem;
+      font-weight: 700;
+      font-size: 0.92rem;
       cursor: pointer;
-      font-family: var(--font);
-      color: var(--text);
+      color: var(--dark);
       transition: all 0.2s ease;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
-    .opt-btn:hover {
-      border-color: var(--dim);
-      background: #faf8f5;
+    .btn-form-link:hover {
+      background: var(--dark);
+      color: var(--white);
+      border-color: var(--dark);
     }
 
-    /* Final Exam Module */
+    /* External Capstone Card Form Template */
     .capstone-card {
       background: var(--white);
       border: 2px solid var(--dark);
       border-radius: 24px;
-      padding: 3.5rem 2.5rem;
+      padding: 4rem 2.5rem;
       text-align: center;
       margin-top: 5rem;
       box-shadow: 0 10px 30px rgba(26,26,46,0.04);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .capstone-icon {
@@ -548,10 +545,28 @@
     .capstone-desc {
       font-size: 1.1rem;
       color: var(--dim);
-      margin-bottom: 3rem;
+      margin-bottom: 2.5rem;
       max-width: 550px;
-      margin-left: auto;
-      margin-right: auto;
+    }
+
+    .btn-final-exam {
+      background: var(--dark);
+      color: var(--white);
+      border: 1px solid var(--dark);
+      padding: 16px 36px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-final-exam:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(26,26,46,0.15);
     }
 
     /* Code-Only Footer Architecture */
@@ -571,20 +586,18 @@
       gap: 16px;
     }
 
-    /* Pure code-based brand marks in footer context */
     .footer-logo-simulation {
       display: flex;
-      gap: 4px;
       align-items: center;
+      gap: 4px;
       height: 20px;
-      opacity: 0.8;
     }
 
     .footer-logo-simulation span {
-      width: 4px;
-      height: 18px;
-      border-radius: 2px;
-      transform: skewY(-20deg);
+      width: 5px;
+      height: 100%;
+      border-radius: 10px;
+      display: inline-block; /* Explicit render requirement */
     }
 
     .footer-copy {
@@ -605,22 +618,12 @@
       border-radius: 1px;
     }
 
-    /* Screen Width Breakpoint Adjustments */
+    /* Screen Breakpoints Layout Handling */
     @media (max-width: 900px) {
-      .nav-bar {
-        padding: 0 1.5rem;
-      }
-      .nav-tabs {
-        display: none; /* Auto-collapse layout nodes safely on smaller devices */
-      }
-      .playlist-hero {
-        flex-direction: column;
-        text-align: center;
-        gap: 1.5rem;
-      }
-      .pl-stats-row {
-        justify-content: center;
-      }
+      .nav-bar { padding: 0 1.5rem; }
+      .nav-tabs { display: none; }
+      .playlist-hero { flex-direction: column; text-align: center; gap: 1.5rem; }
+      .pl-stats-row { justify-content: center; }
     }
 
     @media (max-width: 600px) {
@@ -632,6 +635,8 @@
       .container { padding: 1.5rem 1rem; }
       .grid-layout { grid-template-columns: 1fr; }
       .section-block { padding: 1.5rem; }
+      .assessment-block { flex-direction: column; align-items: stretch; text-align: center; }
+      .btn-form-link { justify-content: center; }
       .video-details { flex-direction: column; align-items: flex-start; gap: 6px; }
     }
   </style>
@@ -640,19 +645,19 @@
 
   <nav class="nav-bar">
     <div class="logo-container" id="nav-logo" onclick="showHome()">
-      <div class="logo-waves">
-        <span class="logo-wave-item" style="background: var(--pink);"></span>
-        <span class="logo-wave-item" style="background: var(--orange);"></span>
-        <span class="logo-wave-item" style="background: var(--blue);"></span>
+      <div class="logo-stripes">
+        <span class="logo-stripe-item" style="background: #e91e8c;"></span>
+        <span class="logo-stripe-item" style="background: #ff9800;"></span>
+        <span class="logo-stripe-item" style="background: #4fc3f7;"></span>
       </div>
-      <div class="logo-text">magnum</div>
+      <div class="logo-text">Magnum Egypt</div>
     </div>
     
     <div class="nav-right-zone">
       <div class="nav-tabs" id="categories-container">
         </div>
       <button class="btn-back" id="nav-back" onclick="showHome()">
-        ← Back to Home
+        ← Back to Tracks
       </button>
     </div>
   </nav>
@@ -663,7 +668,7 @@
       <section class="hero">
         <p class="hero-eyebrow">Magnum Egypt</p>
         <h1>Master the Skills of <br><span style="color: var(--blue)">Code</span>, <span style="color: var(--orange)">Logic</span> &amp; <span style="color: var(--pink)">Hardware</span></h1>
-        <p class="hero-desc">High-quality curriculum educational tracks designed professionally without complex external monitoring systems.</p>
+        <p class="hero-desc">High-quality curriculum educational tracks designed professionally without complex external tracking layers.</p>
         <div class="hero-stripe-line">
           <span style="background: var(--blue)"></span>
           <span style="background: var(--orange)"></span>
@@ -687,21 +692,22 @@
   <footer class="footer-bar">
     <div class="footer-left">
       <div class="footer-logo-simulation">
-        <span style="background: var(--pink);"></span>
-        <span style="background: var(--orange);"></span>
-        <span style="background: var(--blue);"></span>
+        <span style="background: #e91e8c;"></span>
+        <span style="background: #ff9800;"></span>
+        <span style="background: #4fc3f7;"></span>
       </div>
       <div class="footer-copy">&copy; 2026 Magnum Egypt</div>
     </div>
     <div class="footer-stripes">
-      <span style="background: var(--blue)"></span>
-      <span style="background: var(--orange)"></span>
-      <span style="background: var(--pink)"></span>
+      <span style="background: #4fc3f7;"></span>
+      <span style="background: #ff9800;"></span>
+      <span style="background: #e91e8c;"></span>
     </div>
   </footer>
 
   <script>
-    // Canonical Application State and Course Matrix
+    // Master Database Template Object Configuration
+    // Every single course features exactly 4 sequential modules
     const data = {
       categories: [
         { id: "all", label: "All Curriculums", color: "dark", accent: "var(--dark)" },
@@ -719,31 +725,12 @@
           title: "Python Level 1",
           subtitle: "Beginner",
           desc: "Establish foundational programming constructs utilizing standard execution tracks, expressions, and primitive processing frameworks.",
+          finalQuizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform",
           sections: [
-            {
-              title: "Syntax Configurations & Execution Channels",
-              videos: [
-                { title: "Initialization Configurations and Compilation Variables", dur: "14:20", link: "https://www.youtube.com/watch?v=rfscVS0vtbw" },
-                { title: "Scalar Variables, Mutation Principles, and Primitives", dur: "18:45", link: "https://www.youtube.com/watch?v=khKv-8q7YmY" }
-              ],
-              quiz: [
-                { q: "Which core paradigm correctly describes an initialization state assignment configuration?", opts: ["mut x = 10", "x := 10", "x = 10", "int x -> 10"], ans: 2 },
-                { q: "What primary scalar object primitive type evaluates to strict True or False structural values?", opts: ["String", "Boolean", "Float", "Integer"], ans: 1 }
-              ]
-            },
-            {
-              title: "Conditional Matrix Branches & Logical Operations",
-              videos: [
-                { title: "Logical Evaluations, Structural Comparisons & Switch-States", dur: "22:10", link: "https://www.youtube.com/watch?v=Zp5MuPOgdQ0" }
-              ],
-              quiz: [
-                { q: "Which statement processes execution branching chains conditional on subsequent evaluations?", opts: ["elif", "else if", "otherwise", "then"], ans: 0 }
-              ]
-            }
-          ],
-          finalQuiz: [
-            { q: "Which primitive statement output validation configuration runs by default inside raw native instances?", opts: ["print()", "console.log()", "System.out.println()", "echo"], ans: 0 },
-            { q: "Identify the processing system responsible for tracking native runtimes directly without prior binaries.", opts: ["Compiler", "Linker", "Interpreter", "Assembler"], ans: 2 }
+            { title: "Syntax Configurations & Execution Channels", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Initialization Configurations and Compilation Variables", dur: "14:20", link: "https://www.youtube.com/watch?v=rfscVS0vtbw" }] },
+            { title: "Conditional Matrix Branches & Logical Operations", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Logical Evaluations & Structural Comparisons", dur: "22:10", link: "https://www.youtube.com/watch?v=Zp5MuPOgdQ0" }] },
+            { title: "Loops Processing & Iterative Collections", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Indefinite Loops and Finite Progression Tracks", dur: "19:40", link: "https://www.youtube.com/watch?v=khKv-8q7YmY" }] },
+            { title: "Functional Abstraction Elements & Parameter Blocks", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Declaring Methods and Subroutine Call Frameworks", dur: "25:15", link: "https://www.youtube.com/watch?v=9OeznAkyQz4" }] }
           ]
         },
         {
@@ -755,20 +742,12 @@
           title: "Python Level 2",
           subtitle: "Intermediate",
           desc: "Manipulate composite algorithmic states, reference abstract collections arrays, and isolate clean procedural abstractions.",
+          finalQuizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform",
           sections: [
-            {
-              title: "Composite Array Collections & Iterable Iterators",
-              videos: [
-                { title: "Dynamic Arrays, In-Memory Indices & Linear Multi-Mutations", dur: "25:30", link: "https://www.youtube.com/watch?v=9OeznAkyQz4" },
-                { title: "Bounded Immutable Multi-Element Key-Value Pair Hashes", dur: "19:15", link: "https://www.youtube.com/watch?v=daefaLgJAkw" }
-              ],
-              quiz: [
-                { q: "Which syntax signature describes a key-value native dictionary collection structure?", opts: ["[]", "{}", "()", "<>"], ans: 1 }
-              ]
-            }
-          ],
-          finalQuiz: [
-            { q: "What mutation outcome is natively expected when processing mutations on strict immutable Tuples?", opts: ["Silent Append", "Type Exception", "Dynamic Reallocation", "Auto-conversion"], ans: 1 }
+            { title: "Composite Arrays & Multi-Dimension Matrices", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Linear Arrays and Mutability Operations", dur: "21:10", link: "https://www.youtube.com/watch?v=daefaLgJAkw" }] },
+            { title: "Data Collection Objects & Hash Key Mapping", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "KeyValue Structures and Reference Lookup Matrix", dur: "18:45", link: "https://www.youtube.com/watch?v=9OeznAkyQz4" }] },
+            { title: "String Manipulation Algorithms & Parsing Processes", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Text Extraction and Literal Array Traversals", dur: "23:30", link: "https://www.youtube.com/watch?v=khKv-8q7YmY" }] },
+            { title: "Error Resolution Methods & Validation Exceptions", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Try Catch Assertions and Code Testing Frameworks", dur: "17:15", link: "https://www.youtube.com/watch?v=Zp5MuPOgdQ0" }] }
           ]
         },
         {
@@ -780,20 +759,12 @@
           title: "Scratch Level 1",
           subtitle: "Beginner",
           desc: "Discover abstract algorithmic design sequences using visual code interfaces and localized linear event bindings.",
+          finalQuizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform",
           sections: [
-            {
-              title: "Visual Trigger Frameworks & Direction Transformations",
-              videos: [
-                { title: "Interface Architecture and Execution Triggers", dur: "11:12", link: "https://www.youtube.com/watch?v=mGf8m4s7MQA" },
-                { title: "Coordinate Transforms, Step Vectors & Grid Axes", dur: "15:40", link: "https://www.youtube.com/watch?v=2Tz7Sg_fshg" }
-              ],
-              quiz: [
-                { q: "Which color code signature groups operational execution signals triggered by environmental UI inputs?", opts: ["Blue Controls", "Yellow Events", "Green Operators", "Purple Looks"], ans: 1 }
-              ]
-            }
-          ],
-          finalQuiz: [
-            { q: "What event node blocks are foundational to establishing a programmatic system boot initialization sequence?", opts: ["When Key Pressed", "When Green Flag Clicked", "When Backdrops Change", "When Timer Exceeds"], ans: 1 }
+            { title: "Visual Trigger Frameworks & Signal Events", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Interface Overview and Action Triggers", dur: "11:12", link: "https://www.youtube.com/watch?v=mGf8m4s7MQA" }] },
+            { title: "Coordinate Transformations & Moving Step Vectors", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Grid Alignment Tracks and Movement Vectors", dur: "15:40", link: "https://www.youtube.com/watch?v=2Tz7Sg_fshg" }] },
+            { title: "Sound Modulation Effects & Interface Styles", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Modifying Costumes and Sound Event Nodes", dur: "13:20", link: "https://www.youtube.com/watch?v=uKbe0fVfF0Q" }] },
+            { title: "Basic Structural Sequencing & Instruction Flow", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Linear Script Progressions and Clean Terminations", dur: "14:50", link: "https://www.youtube.com/watch?v=83M6S746F9w" }] }
           ]
         },
         {
@@ -805,19 +776,12 @@
           title: "Scratch Level 2",
           subtitle: "Intermediate",
           desc: "Implement continuous asynchronous validation loops, conditional environmental sensing matrices, and clean message notifications.",
+          finalQuizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform",
           sections: [
-            {
-              title: "Asynchronous Evaluation Cycles & Thread Loops",
-              videos: [
-                { title: "Indefinite Integration and Interrupt Monitoring Loops", dur: "18:22", link: "https://www.youtube.com/watch?v=uKbe0fVfF0Q" }
-              ],
-              quiz: [
-                { q: "Which operational block loops instructions continuously through runtime without finite termination metrics?", opts: ["Repeat 10", "Repeat Until", "Forever Block", "If-Then-Else"], ans: 2 }
-              ]
-            }
-          ],
-          finalQuiz: [
-            { q: "How do parallel event threads exchange states globally inside a single tracking instance without variable writes?", opts: ["Thread Forking", "Broadcast Messages", "Local Sub-routines", "Asset Swapping"], ans: 1 }
+            { title: "Asynchronous Progressions & Loop Modules", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Forever Validation Tracks and Loop Conditions", dur: "18:22", link: "https://www.youtube.com/watch?v=uKbe0fVfF0Q" }] },
+            { title: "Environmental Detection Components & Boundary Nodes", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Sensing Color Pins and Object Tracking Coordinates", dur: "16:15", link: "https://www.youtube.com/watch?v=2Tz7Sg_fshg" }] },
+            { title: "Variable Logic Registries & Tracking Integers", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Global Storage Assignments and Score Counters", dur: "19:05", link: "https://www.youtube.com/watch?v=mGf8m4s7MQA" }] },
+            { title: "Thread Event Intercoms & Broadcast Signals", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Messaging Channels and Parallel Workflow Rules", dur: "17:40", link: "https://www.youtube.com/watch?v=83M6S746F9w" }] }
           ]
         },
         {
@@ -829,19 +793,12 @@
           title: "Scratch Level 3",
           subtitle: "Advanced",
           desc: "Architect complex procedural configurations via dynamic custom blocks, and leverage systemic operational math arrays.",
+          finalQuizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform",
           sections: [
-            {
-              title: "Custom Operational Functions & Dynamic Vectors",
-              videos: [
-                { title: "Parametric Sub-routine Design & Non-Leaking Function Blocks", dur: "24:05", link: "https://www.youtube.com/watch?v=83M6S746F9w" }
-              ],
-              quiz: [
-                { q: "What major efficiency value is achieved by engineering modular custom runtime procedural blocks?", opts: ["Cloud Syncing", "DRY Abstraction Reuse", "Resolution Scaling", "Hardware Overclocking"], ans: 1 }
-              ]
-            }
-          ],
-          finalQuiz: [
-            { q: "Which operator block option enables validation parsing across combined computational inputs simultaneously?", opts: ["And/Or Blocks", "Join Strings", "Modulus Calculations", "Absolute Values"], ans: 0 }
+            { title: "Custom Operational Functions & Scope Abstractions", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Parametric Subroutine Designs and Code Reuse", dur: "24:05", link: "https://www.youtube.com/watch?v=83M6S746F9w" }] },
+            { title: "Dynamic Array Structuring & Storage Lists", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Managing List Inputs and Element Tracking Nodes", dur: "22:50", link: "https://www.youtube.com/watch?v=uKbe0fVfF0Q" }] },
+            { title: "Complex Computational Blocks & Logic Operators", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Mathematical Modulo and Compound Logic Operators", dur: "20:15", link: "https://www.youtube.com/watch?v=2Tz7Sg_fshg" }] },
+            { title: "Cloning Engines & Multi-Instance Management", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Spawning Virtual Clones and Memory Clean Routines", dur: "26:30", link: "https://www.youtube.com/watch?v=mGf8m4s7MQA" }] }
           ]
         },
         {
@@ -853,21 +810,12 @@
           title: "Electronics Level 1",
           subtitle: "Beginner",
           desc: "Acquire systematic mastery over foundational hardware circuits, Ohm's law operations, and analog structural connections.",
+          finalQuizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform",
           sections: [
-            {
-              title: "Basic Hardware Architecture & Energy Paths",
-              videos: [
-                { title: "Potential Differences, Electron Tracks, and Currents", dur: "20:15", link: "https://www.youtube.com/watch?v=1xPjES-sHwg" },
-                { title: "Resistive Materials, Operational Diodes & Load Protections", dur: "22:40", link: "https://www.youtube.com/watch?v=Gc1wVbixfHA" }
-              ],
-              quiz: [
-                { q: "Which mathematical formula properly governs circuit relationships under static environmental configurations?", opts: ["P = IV", "V = IR", "F = MA", "E = MC²"], ans: 1 },
-                { q: "What critical system failure occurs if a voltage source links directly back to common ground without inline loads?", opts: ["Open Impedance", "Resistive Shift", "Short Circuit", "Capacitive Saturation"], ans: 2 }
-              ]
-            }
-          ],
-          finalQuiz: [
-            { q: "What primary unit metric tracks electrical charge flow rates traversing fixed cross-sections per second?", opts: ["Volts", "Ohms", "Amperes", "Farads"], ans: 2 }
+            { title: "Circuit Topology Layouts & Electron Paths", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Potential Differences and Static Currents", dur: "20:15", link: "https://www.youtube.com/watch?v=1xPjES-sHwg" }] },
+            { title: "Resistive Components & Current Threshold Caps", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Ohmic Relationships and Dynamic Safety Loads", dur: "22:40", link: "https://www.youtube.com/watch?v=Gc1wVbixfHA" }] },
+            { title: "Series Wiring Channels & Component Integration", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Linear Voltage Behavior and Node Splits", dur: "18:10", link: "https://www.youtube.com/watch?v=6WReFkAy0Dg" }] },
+            { title: "Parallel Distribution Maps & Junction Paths", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Branch Operations and Total Impedance Matrix", dur: "21:35", link: "https://www.youtube.com/watch?v=gI-qXJKFlRA" }] }
           ]
         },
         {
@@ -879,19 +827,12 @@
           title: "Electronics Level 2",
           subtitle: "Intermediate",
           desc: "Prototype structural sensor frameworks on schematic nodes using physical prototyping breadboards.",
+          finalQuizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform",
           sections: [
-            {
-              title: "Prototyping Frameworks & Parallel Matrix Wiring",
-              videos: [
-                { title: "Internal Rail Architectures and Node Grid Continuities", dur: "19:50", link: "https://www.youtube.com/watch?v=6WReFkAy0Dg" }
-              ],
-              quiz: [
-                { q: "How are the central lateral rows on standard prototyping breadboards linked under structural frameworks?", opts: ["Vertical Columns", "Horizontal Multi-nodes", "Diagonal Matrices", "Isolated Independent Points"], ans: 1 }
-              ]
-            }
-          ],
-          finalQuiz: [
-            { q: "When wiring discrete LEDs into electrical circuit structures, which terminal matches the positive anode?", opts: ["Shorter Pin", "Flat Notch Side", "Longer Pin", "Internal Large Frame Plate"], ans: 2 }
+            { title: "Breadboard Configurations & Continuity Frameworks", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Internal Terminal Rails and Bus Alignments", dur: "19:50", link: "https://www.youtube.com/watch?v=6WReFkAy0Dg" }] },
+            { title: "Analog Variable Modulators & Signal Dividers", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Potentiometers and Variable Resistive Arrays", dur: "23:15", link: "https://www.youtube.com/watch?v=1xPjES-sHwg" }] },
+            { title: "Environmental Sensor Drivers & Ambient Inputs", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Photoresistors and Dynamic Voltage Splitting", dur: "20:40", link: "https://www.youtube.com/watch?v=Gc1wVbixfHA" }] },
+            { title: "Transistor Switched Relays & Current Gates", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "BJT Configurations and Isolating High Loads", dur: "24:55", link: "https://www.youtube.com/watch?v=gI-qXJKFlRA" }] }
           ]
         },
         {
@@ -903,29 +844,21 @@
           title: "Electronics Level 3",
           subtitle: "Advanced",
           desc: "Design complex processing frameworks utilizing integrated logic gates, microcontrollers, and digital bus architectures.",
+          finalQuizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform",
           sections: [
-            {
-              title: "Integrated Logic Matrix & Digital Bus Systems",
-              videos: [
-                { title: "Binary Signals, High-Low Threshold States & Gate Arrays", dur: "31:10", link: "https://www.youtube.com/watch?v=gI-qXJKFlRA" }
-              ],
-              quiz: [
-                { q: "Which specific logic gate node requires all operational inputs to evaluate high for execution to flow high?", opts: ["OR", "NAND", "AND", "XOR"], ans: 2 }
-              ]
-            }
-          ],
-          finalQuiz: [
-            { q: "What duty-cycle signal manipulation method processes variable analog outputs from rigid digital microcontrollers?", opts: ["ADC Processing", "PWM Modulation", "UART Handshaking", "I2C Addressing"], ans: 1 }
+            { title: "Integrated Logic Gates & Binary Math Signals", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Logic Gate Assemblies and Truth Threshold Rules", dur: "31:10", link: "https://www.youtube.com/watch?v=gI-qXJKFlRA" }] },
+            { title: "Microcontroller Architectures & Dynamic Pin Frameworks", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Firmware Runtimes and Digital Input Output Nodes", dur: "28:45", link: "https://www.youtube.com/watch?v=1xPjES-sHwg" }] },
+            { title: "Pulse Width Modulation (PWM) & Variable Signals", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "Duty Cycle Waves and Pseudo-Analog Prototyping", dur: "26:20", link: "https://www.youtube.com/watch?v=Gc1wVbixfHA" }] },
+            { title: "Serial Interface Communications & Bus Systems", quizLink: "https://docs.google.com/forms/d/your-form-id-here/viewform", videos: [{ title: "I2C and SPI Communication Protocol Standards", dur: "34:15", link: "https://www.youtube.com/watch?v=6WReFkAy0Dg" }] }
           ]
         }
       ]
     };
 
-    // Client Execution States
+    // View State Variables
     let activeCat = "all";
-    const quizState = {};
 
-    // Layout References
+    // DOM Node Cache
     const domHome = document.getElementById("page-home");
     const domPlaylist = document.getElementById("page-playlist");
     const domNavBack = document.getElementById("nav-back");
@@ -939,7 +872,7 @@
       renderPlaylistGrid();
     });
 
-    // Populate Top Navigation Tab Controls
+    // Populate Top Navigation Tab Elements
     function renderCategoryTabs() {
       catContainer.innerHTML = data.categories.map(cat => {
         const isActive = cat.id === activeCat ? "active" : "";
@@ -962,22 +895,17 @@
       showHome();
     }
 
-    // Populate Main Course Grid Architecture
+    // Render Home Feed Catalog System
     function renderPlaylistGrid() {
       const targetDataset = activeCat === "all" 
         ? data.playlists 
         : data.playlists.filter(p => p.cat === activeCat);
 
-      if (targetDataset.length === 0) {
-        plContainer.innerHTML = `<div style="grid-column: 1/-1; padding: 4rem; text-align: center; color: var(--dim)">No playlists configured.</div>`;
-        return;
-      }
-
       plContainer.innerHTML = targetDataset.map(pl => {
-        let categoryColorHex = "var(--dark)";
-        if(pl.color === "blue") categoryColorHex = "var(--blue)";
-        if(pl.color === "orange") categoryColorHex = "var(--orange)";
-        if(pl.color === "pink") categoryColorHex = "var(--pink)";
+        let categoryColorHex = "#1a1a2e"; // Default Dark
+        if(pl.color === "blue") categoryColorHex = "#4fc3f7";
+        if(pl.color === "orange") categoryColorHex = "#ff9800";
+        if(pl.color === "pink") categoryColorHex = "#e91e8c";
 
         let videoCounter = 0;
         pl.sections.forEach(s => videoCounter += s.videos.length);
@@ -1004,7 +932,7 @@
       }).join('');
     }
 
-    // Navigation Switch Logic
+    // Interface Transitions
     function openPlaylist(id) {
       const pl = data.playlists.find(p => p.id === id);
       if (!pl) return;
@@ -1012,7 +940,7 @@
       domHome.classList.remove("active");
       domPlaylist.classList.add("active");
       domNavBack.style.display = "flex";
-      catContainer.style.display = "none"; // Hide tabs when tracking internal syllabus views
+      catContainer.style.display = "none"; 
 
       renderPlaylistDetailView(pl);
       window.scrollTo(0, 0);
@@ -1022,20 +950,20 @@
       domPlaylist.classList.remove("active");
       domHome.classList.add("active");
       domNavBack.style.display = "none";
-      catContainer.style.display = "flex"; // Restore standard layout controls safely
+      catContainer.style.display = "flex"; 
       renderPlaylistGrid();
       window.scrollTo(0, 0);
     }
 
-    // Process Selected Course Detail Output View
+    // Process Selected Track Detail Viewport Template
     function renderPlaylistDetailView(pl) {
       let totalVideos = 0;
       pl.sections.forEach(s => totalVideos += s.videos.length);
       
-      let categoryColorHex = "var(--dark)";
-      if(pl.color === "blue") categoryColorHex = "var(--blue)";
-      if(pl.color === "orange") categoryColorHex = "var(--orange)";
-      if(pl.color === "pink") categoryColorHex = "var(--pink)";
+      let categoryColorHex = "#1a1a2e"; // Default Dark
+      if(pl.color === "blue") categoryColorHex = "#4fc3f7";
+      if(pl.color === "orange") categoryColorHex = "#ff9800";
+      if(pl.color === "pink") categoryColorHex = "#e91e8c";
 
       plHeaderTarget.innerHTML = `
         <div class="playlist-hero">
@@ -1053,8 +981,8 @@
                 <span class="pl-stat-lbl">Videos</span>
               </div>
               <div class="pl-stat-node">
-                <span class="pl-stat-val">${pl.finalQuiz.length}</span>
-                <span class="pl-stat-lbl">Exam Questions</span>
+                <span class="pl-stat-val">External</span>
+                <span class="pl-stat-lbl">Quizzes</span>
               </div>
             </div>
           </div>
@@ -1063,10 +991,11 @@
 
       let modulesHTML = "";
 
+      // Loops through precisely the 4 customized template modules configured above
       pl.sections.forEach((sec, sIdx) => {
         const videosHTML = sec.videos.map(vid => `
           <a href="${vid.link}" target="_blank" class="video-node" rel="noopener noreferrer">
-            <div class="video-play-ring" style="background: ${categoryColorHex}; color: ${pl.color === 'pink' ? 'var(--white)' : 'var(--dark)'}">▶</div>
+            <div class="video-play-ring" style="background: ${categoryColorHex}; color: ${pl.color === 'pink' ? '#ffffff' : '#1a1a2e'}">▶</div>
             <div class="video-details">
               <span class="video-name">${vid.title}</span>
               <span class="video-runtime">${vid.dur} <span class="video-external-icon">↗</span></span>
@@ -1074,103 +1003,41 @@
           </a>
         `).join('');
 
-        const quizHTML = sec.quiz.map((qObj, qIdx) => {
-          const stateKey = `${pl.id}-${sIdx}-${qIdx}`;
-          const currentSelection = quizState[stateKey];
-
-          const optionsHTML = qObj.opts.map((opt, oIdx) => {
-            const isSelected = currentSelection === oIdx;
-            const styleAttr = isSelected 
-              ? `style="background: ${categoryColorHex}; color: ${pl.color === 'pink' ? 'var(--white)' : 'var(--dark)'}; border-color: ${categoryColorHex}; font-weight: 600;"` 
-              : '';
-            return `
-              <button class="opt-btn" ${styleAttr} onclick="handleQuizSelection('${pl.id}', ${sIdx}, ${qIdx}, ${oIdx})">
-                ${opt}
-              </button>
-            `;
-          }).join('');
-
-          return `
-            <div class="quiz-item">
-              <p class="quiz-prompt">Q${qIdx + 1}: ${qObj.q}</p>
-              <div class="quiz-options-matrix">${optionsHTML}</div>
-            </div>
-          `;
-        }).join('');
-
         modulesHTML += `
           <section class="section-block">
             <div class="section-header">
-              <div class="section-index-ring" style="background: ${categoryColorHex}; color: ${pl.color === 'pink' ? 'var(--white)' : 'var(--dark)'}">${sIdx + 1}</div>
+              <div class="section-index-ring" style="background: ${categoryColorHex}; color: ${pl.color === 'pink' ? '#ffffff' : '#1a1a2e'}">${sIdx + 1}</div>
               <h2 class="section-title">${sec.title}</h2>
             </div>
             <div class="video-stack">
               ${videosHTML}
             </div>
             <div class="assessment-block">
-              <div class="assessment-title">Section Verification Quiz</div>
-              ${quizHTML}
+              <div class="assessment-meta">
+                <div class="assessment-title">Section ${sIdx + 1} Verification Form</div>
+                <div class="assessment-desc">Complete the custom feedback assessment evaluation matrix linked for this module channel.</div>
+              </div>
+              <a href="${sec.quizLink}" target="_blank" class="btn-form-link" rel="noopener noreferrer">
+                Open Quiz Form ↗
+              </a>
             </div>
           </section>
         `;
       });
 
-      // Comprehensive Final Exam Rendering Block
-      const finalExamStateKeyPrefix = `${pl.id}-final`;
-      const finalExamHTML = pl.finalQuiz.map((qObj, qIdx) => {
-        const stateKey = `${finalExamStateKeyPrefix}-${qIdx}`;
-        const currentSelection = quizState[stateKey];
-
-        const optionsHTML = qObj.opts.map((opt, oIdx) => {
-          const isSelected = currentSelection === oIdx;
-          const styleAttr = isSelected 
-            ? `style="background: ${categoryColorHex}; color: ${pl.color === 'pink' ? 'var(--white)' : 'var(--dark)'}; border-color: ${categoryColorHex}; font-weight: 600;"` 
-              : '';
-          return `
-            <button class="opt-btn" ${styleAttr} onclick="handleFinalQuizSelection('${pl.id}', ${qIdx}, ${oIdx})">
-              ${opt}
-            </button>
-          `;
-        }).join('');
-
-        return `
-          <div class="quiz-item" style="text-align: left; margin-bottom: 2rem;">
-            <p class="quiz-prompt">Exam Q${qIdx + 1}: ${qObj.q}</p>
-            <div class="quiz-options-matrix">${optionsHTML}</div>
-          </div>
-        `;
-      }).join('');
-
+      // Complete Comprehensive Final Capstone Core Integration Module
       modulesHTML += `
         <article class="capstone-card">
           <div class="capstone-icon">🏆</div>
           <h2 class="capstone-title">${pl.title} Comprehensive Final Certification Exam</h2>
-          <p class="capstone-desc">Complete all module tracks above before validating comprehensive logic matrices here.</p>
-          <div style="margin-top: 2.5rem;">
-            ${finalExamHTML}
-          </div>
+          <p class="capstone-desc">Ensure you have successfully completed all 4 module validation tracks above before launching the comprehensive evaluation form below.</p>
+          <a href="${pl.finalQuizLink}" target="_blank" class="btn-final-exam" rel="noopener noreferrer">
+            Launch Comprehensive Final Exam ↗
+          </a>
         </article>
       `;
 
       plModulesTarget.innerHTML = modulesHTML;
-    }
-
-    // Save Selected Options to Local Instance Arrays Safely
-    function handleQuizSelection(plId, sIdx, qIdx, oIdx) {
-      const stateKey = `${plId}-${sIdx}-${qIdx}`;
-      quizState[stateKey] = oIdx;
-      
-      const pl = data.playlists.find(p => p.id === plId);
-      renderPlaylistDetailView(pl);
-    }
-
-    // Save Final Selected Exam Options 
-    function handleFinalQuizSelection(plId, qIdx, oIdx) {
-      const stateKey = `${plId}-final-${qIdx}`;
-      quizState[stateKey] = oIdx;
-      
-      const pl = data.playlists.find(p => p.id === plId);
-      renderPlaylistDetailView(pl);
     }
   </script>
 </body>
